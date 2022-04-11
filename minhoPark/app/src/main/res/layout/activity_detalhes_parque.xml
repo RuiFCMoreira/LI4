@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minhopark.View.DetalhesParque">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="478dp"
+        android:layout_height="809dp"
+        android:src="@drawable/fundo"
+        app:layout_constraintBottom_toTopOf="@+id/rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rating"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="412dp"
+        android:layout_height="238dp"
+        android:layout_marginBottom="493dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context="com.example.minhopark.View.MapsActivity" />
+
+
+    <ImageView
+        android:id="@+id/parkImg"
+
+        android:layout_width="246dp"
+        android:layout_height="159dp"
+        android:layout_marginEnd="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeParque"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parkImg" />
+
+    <TextView
+        android:id="@+id/Categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <TextView
+        android:id="@+id/Horario"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+    <TextView
+        android:id="@+id/Distancia"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeParque" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Distancia" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/custom_button_fav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/parkImg"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+    <TextView
+        android:id="@+id/Endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Horario" />
+
+    <TextView
+        android:id="@+id/estadoOperacional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Endereco" />
+
+
+    <ImageView
+        android:id="@+id/menuir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:src="@drawable/menuir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map" />
+
+    <Button
+        android:id="@+id/buttonIr"
+        android:layout_width="33dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="73dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/menuir"
+        app:layout_constraintEnd_toEndOf="@+id/menuir"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/menuir"
+        app:layout_constraintTop_toTopOf="@+id/menuir"
+        app:layout_constraintVertical_bias="0.666"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="26dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/menuir"
+        app:layout_constraintTop_toTopOf="@+id/menuir">
+
+        <RadioButton
+            android:id="@+id/pe"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/bicicleta"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/carro"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
